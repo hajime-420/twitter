@@ -1,7 +1,7 @@
 import FeedCard from "../components/FeedCard";
 import { Tweet } from "../types/Tweet";
 
-const Feed = () => {
+const like = () => {
   const tweets: Tweet[] = [
     {
       id: 1,
@@ -34,4 +34,4 @@ const Feed = () => {
   );
 };
 
-export default Feed;
+export default like;
