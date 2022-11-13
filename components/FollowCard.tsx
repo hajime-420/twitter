@@ -1,13 +1,12 @@
 import Image from "next/image";
+import { Follow } from "../types/Follower";
 import { Tweet } from "../types/Tweet";
 
 type Props = {
-  tweet: Tweet;
+  follow: Follow;
 };
 
-const FeedCard = (props: Props) => {
-  const { tweet } = props;
-
+const FollowCard = () => {
   return (
     <div className="border-4 border-gray-300 w-1/2 p-4 space-y-3">
       <div className="flex flex-row space-x-6 ">
@@ -20,12 +19,11 @@ const FeedCard = (props: Props) => {
         />
         <p className="font-semibold">ID</p>
       </div>
-      <div>
-        <div className="pl-20">{tweet.content}</div>
-        <div className="flex justify-end">💗</div>
+      <div className="pl-20">
+        コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
       </div>
     </div>
   );
 };
 
-export default FeedCard;
+export default FollowCard;
