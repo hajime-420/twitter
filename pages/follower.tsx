@@ -4,10 +4,14 @@ import FollowCard from "../components/FollowCard";
 const Follower = () => {};
 
 const follower: any = () => {
-  <FollowCard />;
-  <FollowCard />;
-  <FollowCard />;
-  <FollowCard />;
+  return (
+    <>
+      <FollowCard />
+      <FollowCard />
+      <FollowCard />
+      <FollowCard />
+    </>
+  );
 };
 
 export default follower;
