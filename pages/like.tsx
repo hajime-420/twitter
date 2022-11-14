@@ -1,37 +1,32 @@
 import FeedCard from "../components/FeedCard";
+import TweetList from "../components/TweetList";
 import { Tweet } from "../types/Tweet";
 
-const like = () => {
+const Like = () => {
   const tweets: Tweet[] = [
     {
-      id: 1,
-      content: "11111テキストテキストテキストテキストテキスト",
+      id: 4,
+      content: "aaaaaa",
       isDeleted: false,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
     {
-      id: 2,
-      content: "22222テキストテキストテキストテキストテキスト",
+      id: 5,
+      content: "bbbbbbbb",
       isDeleted: false,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
     {
-      id: 3,
-      content: "3333テキストテキストテキストテキストテキスト",
+      id: 6,
+      content: "7777777",
       isDeleted: false,
       createdAt: new Date(),
       updatedAt: new Date(),
     },
   ];
-  return (
-    <div className="p-4 flex flex-col space-y-1 items-center">
-      {tweets.map((tweet, index) => (
-        <FeedCard key={index} tweet={tweet} />
-      ))}
-    </div>
-  );
+  return <TweetList tweets={tweets} />;
 };
 
-export default like;
+export default Like;

@@ -19,7 +19,7 @@ const Follower = () => {
   ];
 
   return (
-    <div>
+    <div className="p-4 flex flex-col space-y-1 items-center">
       {follower.map((follow, index) => (
         <FollowCard key={index} follow={follow} />
       ))}

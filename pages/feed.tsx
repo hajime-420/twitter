@@ -1,4 +1,4 @@
-import FeedCard from "../components/FeedCard";
+import TweetList from "../components/TweetList";
 import { Tweet } from "../types/Tweet";
 
 const Feed = () => {
@@ -25,13 +25,7 @@ const Feed = () => {
       updatedAt: new Date(),
     },
   ];
-  return (
-    <div className="p-4 flex flex-col space-y-1 items-center">
-      {tweets.map((tweet, index) => (
-        <FeedCard key={index} tweet={tweet} />
-      ))}
-    </div>
-  );
+  return <TweetList tweets={tweets} />;
 };
 
 export default Feed;
