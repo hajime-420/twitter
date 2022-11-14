@@ -1,30 +1,21 @@
 import React from "react";
-import FollowCard from "../components/FollowCard";
-import { Follow } from "../types/Follower";
+import UserCard from "../components/UserCard";
+import UserList from "../components/UserList";
+import { User } from "../types/User";
 
 const Follower = () => {
-  const follower: Follow[] = [
+  const users: User[] = [
     {
       id: 1,
-      followerId: 1,
-      followeeId: 1,
+      name: "aaa",
+      image: "aaa",
+      isDeleted: false,
       createdAt: new Date(),
-    },
-    {
-      id: 2,
-      followerId: 2,
-      followeeId: 2,
-      createdAt: new Date(),
+      updatedAt: new Date(),
     },
   ];
 
-  return (
-    <div className="p-4 flex flex-col space-y-1 items-center">
-      {follower.map((follow, index) => (
-        <FollowCard key={index} follow={follow} />
-      ))}
-    </div>
-  );
+  return <UserList users={users} />;
 };
 
 export default Follower;
