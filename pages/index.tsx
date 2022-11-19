@@ -4,7 +4,6 @@ import Header from "../components/Header";
 const Home: NextPage = () => {
   return (
     <>
-      <Header />
       <div className="flex flex-col min-h-screen items-center justify-center py-2 font-serif">
         <div className="">
           <h1 className="text-4xl font-size:2.25rem;line-height:2.5rem。">
