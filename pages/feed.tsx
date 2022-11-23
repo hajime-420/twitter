@@ -25,7 +25,17 @@ const Feed = () => {
       updatedAt: new Date(),
     },
   ];
-  return <TweetList tweets={tweets} />;
+  return (
+    <>
+      <div className="flex flex-row space-x-6 flex-col items-center">
+        <input className="border border-gray-400 rounded-xl px-2"></input>
+        <button className="border border-gray-300 rounded-md space-y-6">
+          投稿
+        </button>
+      </div>
+      <TweetList tweets={tweets} />
+    </>
+  );
 };
 
 export default Feed;
