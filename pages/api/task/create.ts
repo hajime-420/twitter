@@ -7,7 +7,7 @@ export default async function handleCreate(
 ): Promise<void> {
   const result = await prisma.tweet.create({
     data: {
-      name: req.body.name,
+      content: req.body.name,
     },
   });
   res.json(result);
